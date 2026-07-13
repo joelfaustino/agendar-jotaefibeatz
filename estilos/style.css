@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: #07110C;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+
+    position: relative;
+
+}
+
+/*==============================
+BACKGROUND
+==============================*/
+
+.background-shapes {
+
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+
+}
+
+.shape {
+
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(110px);
+    opacity: .55;
+
+}
+
+.shape1 {
+
+    width: 520px;
+    height: 520px;
+
+    background: #37ff14bd;
+
+    left: -180px;
+    top: -120px;
+
+}
+
+.shape2 {
+
+    width: 650px;
+    height: 650px;
+
+    background: #14532d;
+
+    right: -250px;
+    top: 35%;
+
+}
+
+.shape3 {
+
+    width: 420px;
+    height: 420px;
+
+    background: #1B5E20;
+
+    bottom: -150px;
+    left: 35%;
+
+}
+
+/*==============================
+CONTAINER
+==============================*/
+
+.container {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+}
+
+/*==============================
+CARD
+==============================*/
+
+.glass-card {
+
+    width: 100%;
+    max-width: 540px;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    background: rgba(18, 40, 28, .45);
+
+    backdrop-filter: blur(24px);
+
+    border: 1px solid rgba(57, 255, 20, .18);
+
+    box-shadow:
+
+        0 0 60px rgba(57, 255, 20, .12),
+        0 15px 45px rgba(0, 0, 0, .45);
+
+    text-align: center;
+
+}
+
+/*==============================
+PERFIL
+==============================*/
+
+.profile {
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+}
+
+.profile img {
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #39FF14;
+
+    box-shadow:
+
+        0 0 35px rgba(57, 255, 20, .65);
+
+}
+
+/*==============================
+TEXTOS
+==============================*/
+
+h1 {
+
+    color: #fff;
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+
+}
+
+.subtitle {
+
+    color: #C9D6CE;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+
+}
+
+/*==============================
+INPUTS
+==============================*/
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+
+    margin-bottom: 22px;
+
+}
+
+.input-group label {
+
+    color: #fff;
+
+    margin-bottom: 8px;
+
+    font-weight: 500;
+
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+
+    width: 100%;
+
+    background: #0F2418;
+
+    color: #fff;
+
+    border: 2px solid rgba(57, 255, 20, .18);
+
+    border-radius: 14px;
+
+    padding: 16px;
+
+    outline: none;
+
+    transition: .3s;
+
+    font-size: 15px;
+
+}
+
+.input-group textarea {
+
+    resize: none;
+
+}
+
+.input-group select {
+
+    cursor: pointer;
+
+    appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' width='20' height='20' viewBox='0 0 16 16'%3E%3Cpath d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+
+    background-position: right 18px center;
+
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+
+    border-color: #39FF14;
+
+    box-shadow:
+
+        0 0 18px rgba(57, 255, 20, .45);
+
+}
+
+.input-group select option {
+
+    background: #0F2418;
+
+    color: white;
+
+}
+
+::placeholder {
+
+    color: #A7B8AF;
+
+}
+
+/*==============================
+BOTÃO
+==============================*/
+
+.submit-btn {
+
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #39FF14;
+
+    color: #07110C;
+
+    font-weight: 700;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 10px;
+
+    box-shadow:
+
+        0 0 25px rgba(57, 255, 20, .45);
+
+}
+
+.submit-btn:hover {
+
+    background: #63ff48;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 0 40px rgba(57, 255, 20, .8);
+
+}
+
+.submit-btn:active {
+
+    transform: scale(.98);
+
+}
+
+/*==============================
+SOCIAL
+==============================*/
+
+.social-area {
+
+    margin-top: 35px;
+
+}
+
+.social-area p {
+
+    color: #C9D6CE;
+
+    margin-bottom: 18px;
+
+}
+
+.social-icons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 16px;
+
+}
+
+.social-icons a {
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #39FF14;
+
+    background: #0F2418;
+
+    border: 1px solid rgba(57, 255, 20, .2);
+
+    transition: .35s;
+
+    font-size: 20px;
+
+}
+
+.social-icons a:hover {
+
+    background: #39FF14;
+
+    color: #07110C;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+
+        0 0 25px rgba(57, 255, 20, .7);
+
+}
+
+/*==============================
+SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #39FF14;
+
+    border-radius: 20px;
+
+}
+
+/*==============================
+RESPONSIVO
+==============================*/
+
+@media(max-width:768px) {
+
+    .glass-card {
+
+        padding: 35px 25px;
+
+    }
+
+    h1 {
+
+        font-size: 28px;
+
+    }
+
+    .profile img {
+
+        width: 110px;
+        height: 110px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .glass-card {
+
+        padding: 25px 18px;
+
+        border-radius: 24px;
+
+    }
+
+    h1 {
+
+        font-size: 24px;
+
+    }
+
+    .subtitle {
+
+        font-size: 14px;
+
+    }
+
+    .submit-btn {
+
+        font-size: 16px;
+
+    }
+
+}

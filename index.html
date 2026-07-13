@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jota Efi Beatz | Agendar Beats</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="shortcut icon" href="images/icons-jf/icon-jf-02-fv/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-shapes">
+        <span class="shape shape1"></span>
+        <span class="shape shape2"></span>
+        <span class="shape shape3"></span>
+    </div>
+
+    <!-- Conteúdo -->
+    <main class="container">
+
+        <section class="glass-card">
+
+            <!-- Perfil -->
+            <div class="profile">
+                <img src="images/foto-perfil01.jpg" alt="Jota Efi Beatz">
+            </div>
+
+            <!-- Título -->
+            <h1>Jota Efi Beatz</h1>
+
+            <p class="subtitle">
+                Conte-me o beat que procura e vamos criar algo que faça a sua música destacar-se.
+            </p>
+
+            <!-- Formulário -->
+            <form id="beatForm">
+
+                <!-- Nome -->
+                <div class="input-group">
+                    <label for="artistName">
+                        Nome Artístico
+                    </label>
+
+                    <input
+                        type="text"
+                        id="artistName"
+                        name="artistName"
+                        placeholder="Ex.: Lil Boy, MC João..."
+                        required>
+                </div>
+
+                <!-- Estilo -->
+                <div class="input-group">
+
+                    <label for="beatStyle">
+                        Estilo do Beat
+                    </label>
+
+                    <select
+                        id="beatStyle"
+                        name="beatStyle"
+                        required>
+
+                        <option value="" selected disabled>
+                            Selecione um estilo
+                        </option>
+
+                        <option value="Trap/Rap">
+                            Trap/Rap
+                        </option>
+
+                        <option value="Drill">
+                            Drill
+                        </option>
+
+                        <option value="Afro Beat">
+                            Afro Beat
+                        </option>
+
+                        <option value="Guetto Zouk">
+                            Guetto Zouk
+                        </option>
+
+                        <option value="Afro House">
+                            Afro House
+                        </option>
+
+                        <option value="Afro Tech">
+                            Afro Tech
+                        </option>
+
+                        <option value="Afro Drill">
+                            Afro Drill
+                        </option>
+
+                        <option value="Funk">
+                            Funk
+                        </option>
+
+                        <option value="Outro">
+                            Outro
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- Mensagem -->
+                <div class="input-group">
+
+                    <label for="message">
+                        Mensagem (Opcional)
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Ex.: Quero um beat estilo Travis Scott, atmosfera sombria, 140 BPM..."></textarea>
+
+                </div>
+
+                <!-- Botão -->
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Enviar Pedido
+
+                </button>
+
+            </form>
+
+            <!-- Redes Sociais -->
+            <div class="social-area">
+
+                <p>Acompanhe o meu trabalho</p>
+
+                <div class="social-icons">
+
+                    <a href="https://facebook.com/jotaefibeatzoficial" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/jotaefibeatz/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@jotaefibeatz" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UC3ObSe0lJ6YUykChEcRdfEg?sub_confirmation=1" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
